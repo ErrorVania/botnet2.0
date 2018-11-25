@@ -1,0 +1,13 @@
+c:\users\joshua\source\repos\botnet2.0\botnet2.0\bin\Debug\botnet2.0.exe.config
+c:\users\joshua\source\repos\botnet2.0\botnet2.0\bin\Debug\botnet2.0.exe
+c:\users\joshua\source\repos\botnet2.0\botnet2.0\bin\Debug\botnet2.0.pdb
+c:\users\joshua\source\repos\botnet2.0\botnet2.0\obj\Debug\botnet2.0.csprojAssemblyReference.cache
+c:\users\joshua\source\repos\botnet2.0\botnet2.0\obj\Debug\botnet2._0.Form1.resources
+c:\users\joshua\source\repos\botnet2.0\botnet2.0\obj\Debug\botnet2._0.Properties.Resources.resources
+c:\users\joshua\source\repos\botnet2.0\botnet2.0\obj\Debug\botnet2.0.csproj.GenerateResource.cache
+c:\users\joshua\source\repos\botnet2.0\botnet2.0\obj\Debug\botnet2.0.csproj.CoreCompileInputs.cache
+c:\users\joshua\source\repos\botnet2.0\botnet2.0\obj\Debug\botnet2.0.exe
+c:\users\joshua\source\repos\botnet2.0\botnet2.0\obj\Debug\botnet2.0.pdb
+C:\Users\Joshua\source\repos\botnet2.0\botnet2.0\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Joshua\source\repos\botnet2.0\botnet2.0\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Joshua\source\repos\botnet2.0\botnet2.0\obj\Debug\botnet2.0.csproj.CopyComplete

